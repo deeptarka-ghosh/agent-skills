@@ -9,11 +9,31 @@ The skills in this repository are designed to be:
 * **Practical** — focused on clear behavior and predictable results.
 * **Composable** — individual skills can be used independently.
 
+## Agents
+
+### Requirements Analyst
+
+Identifies and resolves material requirements and ambiguity before planning or implementation.
+
+`agents/requirements-analyst/SOUL.md`
+
+### Planner
+
+Turns confirmed requirements into an actionable technical implementation plan.
+
+`agents/planner/SOUL.md`
+
+### Coder
+
+Executes the approved development plan and delegates implementation to OpenCode.
+
+`agents/coder/SOUL.md`
+
 ## Skills
 
 ### Bot-to-Bot Communication
 
-Compact, unambiguous communication protocol for AI agents working together.
+Compact, structured communication protocol for AI agents working together.
 
 `skills/bot-to-bot-communication/SKILL.md`
 
@@ -23,67 +43,36 @@ Guidelines for scanning, updating, and maintaining codebase documentation.
 
 `skills/technical-documentation/SKILL.md`
 
-# Requirements & Planning Skills
+## Using an Agent
 
-Skills for turning ambiguous software requests into clear, agreed requirements and actionable implementation plans.
+Agents define specific roles and responsibilities. Each agent is designed to work as part of a larger workflow.
 
-### Requirements Discovery
+Copy or adapt the relevant `SOUL.md` into the agent/profile system used by your AI framework.
 
-Identifies missing information, resolves ambiguity, inspects existing project context, and confirms requirements before planning or implementation.
-
-`skills/requirements-discovery/SKILL.md`
-
-### Development Planning
-
-Turns confirmed requirements into a concrete technical implementation plan covering architecture, components, data, testing, documentation, and implementation steps.
-
-`skills/development-planning/SKILL.md`
-
-## Workflow
-
-```text
-Request
-  ↓
-Requirements Discovery
-  ↓
-Requirements Confirmed
-  ↓
-Development Planning
-  ↓
-Implementation
-  ↓
-Testing
-  ↓
-Documentation
-```
-
-## Design Principles
-
-* Do not implement while requirements are materially ambiguous.
-* Inspect existing project context before asking questions.
-* Do not ask questions whose answers are already known.
-* Do not invent requirements or technical decisions.
-* Separate **what to build** from **how to build it**.
-* Plans must be actionable by another agent.
-* Preserve existing project conventions unless there is a justified reason to change them.
+Agents are agent-agnostic and do not require a specific model or provider.
 
 ## Using a Skill
 
-Copy the required skill into the skill directory supported by your agent, or reference it according to the agent/framework's skill mechanism.
+Skills define reusable capabilities that agents can use when needed.
 
-Skills are intentionally written without depending on a specific AI agent, model, provider, or orchestration framework.
+Copy or adapt the relevant `SKILL.md` into the skill system supported by your AI framework.
+
+Skills are designed to be reusable across different agents and frameworks.
 
 ## Contributing
 
 Contributions are welcome.
 
-When adding a skill:
+When adding an agent or skill:
 
 1. Keep it agent-agnostic where possible.
-2. Define clear behavior and constraints.
+2. Define clear behavior and responsibilities.
 3. Avoid unnecessary verbosity.
 4. Prefer deterministic instructions over vague guidance.
 5. Include examples where they clarify expected behavior.
+6. Do not duplicate an existing agent or skill without a clear reason.
+7. Keep agents focused on roles and skills focused on reusable capabilities.
+8. Update the README when adding a new agent or skill.
 
 ## Road map
 
