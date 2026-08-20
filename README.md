@@ -9,27 +9,19 @@ The skills in this repository are designed to be:
 * **Practical** — focused on clear behavior and predictable results.
 * **Composable** — individual skills can be used independently.
 
-## Skills
+### Skills
 
-### Bot-to-Bot Communication
+#### Bot-to-Bot Communication
 
-A communication protocol for AI agents communicating with other agents, especially in shared group chats.
+Compact, unambiguous communication protocol for AI agents working together.
 
-The skill focuses on:
+`skills/bot-to-bot-communication/SKILL.md`
 
-* Compact communication
-* Low unnecessary token usage
-* Clear and unambiguous messages
-* Structured status updates
-* Requests and responses
-* Decisions and blockers
-* Human-readable communication when required
+#### Technical Documentation
 
-Location:
+Guidelines for scanning, updating, and maintaining codebase documentation.
 
-```text
-skills/bot-to-bot-communication/SKILL.md
-```
+`skills/technical-documentation/SKILL.md`
 
 ## Using a Skill
 
