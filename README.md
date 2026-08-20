@@ -23,6 +23,50 @@ Guidelines for scanning, updating, and maintaining codebase documentation.
 
 `skills/technical-documentation/SKILL.md`
 
+# Requirements & Planning Skills
+
+Skills for turning ambiguous software requests into clear, agreed requirements and actionable implementation plans.
+
+### Requirements Discovery
+
+Identifies missing information, resolves ambiguity, inspects existing project context, and confirms requirements before planning or implementation.
+
+`skills/requirements-discovery/SKILL.md`
+
+### Development Planning
+
+Turns confirmed requirements into a concrete technical implementation plan covering architecture, components, data, testing, documentation, and implementation steps.
+
+`skills/development-planning/SKILL.md`
+
+## Workflow
+
+```text
+Request
+  ↓
+Requirements Discovery
+  ↓
+Requirements Confirmed
+  ↓
+Development Planning
+  ↓
+Implementation
+  ↓
+Testing
+  ↓
+Documentation
+```
+
+## Design Principles
+
+* Do not implement while requirements are materially ambiguous.
+* Inspect existing project context before asking questions.
+* Do not ask questions whose answers are already known.
+* Do not invent requirements or technical decisions.
+* Separate **what to build** from **how to build it**.
+* Plans must be actionable by another agent.
+* Preserve existing project conventions unless there is a justified reason to change them.
+
 ## Using a Skill
 
 Copy the required skill into the skill directory supported by your agent, or reference it according to the agent/framework's skill mechanism.
@@ -56,13 +100,9 @@ For a multi-agent development system, I would keep the number of agents small an
 | **Reviewer**      | Quality        | Code review, maintainability, correctness                   |
 | **Security**      | Security       | Vulnerability analysis, auth, secrets, threat modeling      |
 | **DevOps**        | Infrastructure | CI/CD, Docker, deployment, infrastructure                   |
-| **Researcher**    | Research       | Documentation, libraries, technical research                |
 | **Debugger**      | Engineering    | Investigates failures and root causes                       |
 | **Performance**   | Engineering    | Profiling, optimization, scalability                        |
 | **Product**       | Product        | Requirements, acceptance criteria, feature definition       |
-| **Documentation** (done)| Documentation  | README, API docs, architecture docs                         |
-| **Bot2Bot Comm** (done) | General        | Use compact, unambiguous communication protocol for agents  |
-
 
 #### Practical Team Structure
 
