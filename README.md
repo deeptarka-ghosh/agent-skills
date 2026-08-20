@@ -44,7 +44,33 @@ When adding a skill:
 ## License
 
 This repository is licensed under the MIT License.
-
 You are free to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the software and associated skill content, subject to the terms of the license.
+
+### Road map
+
+For a multi-agent development system, I would keep the number of agents small and give each one a clear responsibility.
+
+| Agent             | Team           | Purpose                                                     |
+| ----------------- | -------------- | ----------------------------------------------------------- |
+| **Orchestrator**  | Management     | Breaks requests into tasks, assigns agents, tracks progress |
+| **Architect**     | Architecture   | System design, architecture decisions, technical tradeoffs  |
+| **Developer**     | Engineering    | Implements features and fixes                               |
+| **Frontend**      | Engineering    | UI, UX implementation, frontend code                        |
+| **Backend**       | Engineering    | APIs, services, databases, business logic                   |
+| **QA**            | Quality        | Tests, test strategy, regression testing                    |
+| **Reviewer**      | Quality        | Code review, maintainability, correctness                   |
+| **Security**      | Security       | Vulnerability analysis, auth, secrets, threat modeling      |
+| **DevOps**        | Infrastructure | CI/CD, Docker, deployment, infrastructure                   |
+| **Researcher**    | Research       | Documentation, libraries, technical research                |
+| **Debugger**      | Engineering    | Investigates failures and root causes                       |
+| **Performance**   | Engineering    | Profiling, optimization, scalability                        |
+| **Product**       | Product        | Requirements, acceptance criteria, feature definition       |
+| **Documentation** (done)| Documentation  | README, API docs, architecture docs                         |
+| **Bot2Bot Comm** (done) | General        | Use compact, unambiguous communication protocol for agents  |
+
+
+Example of a Practical team structure
+
+
 
 See [`LICENSE`](LICENSE) for the full license text.
