@@ -41,12 +41,7 @@ When adding a skill:
 4. Prefer deterministic instructions over vague guidance.
 5. Include examples where they clarify expected behavior.
 
-## License
-
-This repository is licensed under the MIT License.
-You are free to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the software and associated skill content, subject to the terms of the license.
-
-### Road map
+## Road map
 
 For a multi-agent development system, I would keep the number of agents small and give each one a clear responsibility.
 
@@ -70,7 +65,41 @@ For a multi-agent development system, I would keep the number of agents small an
 
 
 Example of a Practical team structure
+                    ORCHESTRATOR
+                         │
+          ┌──────────────┼──────────────┐
+          ▼              ▼              ▼
+      ARCHITECT      RESEARCHER       PRODUCT
+          │
+          ▼
+      ENGINEERING
+      ┌────┼────┐
+      ▼    ▼    ▼
+   FRONTEND BACKEND DEVOPS
+      │      │
+      └──────┼─────────┐
+             ▼         ▼
+            QA      SECURITY
+             │
+             ▼
+          REVIEWER
 
+#### For example a Hermes + OpenCode setup
+Hermes
+├── Orchestrator (Agent)
+├── Researcher (Agent)
+└── Developer (Agent)
+       └── OpenCode
+            ├── Architect skill
+            ├── Frontend skill
+            ├── Backend skill
+            ├── Testing skill
+            └── Security skill
+
+## License
+
+This repository is licensed under the MIT License.
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the software and associated skill content, subject to the terms of the license.
 
 
 See [`LICENSE`](LICENSE) for the full license text.
