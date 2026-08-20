@@ -1,9 +1,8 @@
----
-
 name: development-planning
+
 description: Create actionable technical implementation plans from confirmed software requirements and existing project context.
+
 license: MIT
-------------
 
 # Development Planning
 
