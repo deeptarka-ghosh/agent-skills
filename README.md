@@ -9,15 +9,15 @@ The skills in this repository are designed to be:
 * **Practical** — focused on clear behavior and predictable results.
 * **Composable** — individual skills can be used independently.
 
-### Skills
+## Skills
 
-#### Bot-to-Bot Communication
+### Bot-to-Bot Communication
 
 Compact, unambiguous communication protocol for AI agents working together.
 
 `skills/bot-to-bot-communication/SKILL.md`
 
-#### Technical Documentation
+### Technical Documentation
 
 Guidelines for scanning, updating, and maintaining codebase documentation.
 
