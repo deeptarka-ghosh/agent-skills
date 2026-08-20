@@ -64,27 +64,24 @@ For a multi-agent development system, I would keep the number of agents small an
 | **Bot2Bot Comm** (done) | General        | Use compact, unambiguous communication protocol for agents  |
 
 
-Example of a Practical team structure
-                    ORCHESTRATOR
-                         │
-          ┌──────────────┼──────────────┐
-          ▼              ▼              ▼
-      ARCHITECT      RESEARCHER       PRODUCT
-          │
-          ▼
-      ENGINEERING
-      ┌────┼────┐
-      ▼    ▼    ▼
-   FRONTEND BACKEND DEVOPS
-      │      │
-      └──────┼─────────┐
-             ▼         ▼
-            QA      SECURITY
-             │
-             ▼
-          REVIEWER
+#### Practical Team Structure
+
+```
+ORCHESTRATOR
+├── ARCHITECT
+├── RESEARCHER
+└── PRODUCT
+    └── ENGINEERING
+        ├── FRONTEND
+        ├── BACKEND
+        └── DEVOPS
+            ├── QA
+            └── SECURITY
+                └── REVIEWER
+```
 
 #### For example a Hermes + OpenCode setup
+```
 Hermes
 ├── Orchestrator (Agent)
 ├── Researcher (Agent)
@@ -95,6 +92,7 @@ Hermes
             ├── Backend skill
             ├── Testing skill
             └── Security skill
+```
 
 ## License
 
