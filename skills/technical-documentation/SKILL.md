@@ -1,3 +1,8 @@
+---
+Name: technical-documentation-writer
+Description: Maintain accurate, useful technical documentation for software codebases. Inspect the repository and existing documentation first, update relevant documentation when possible, and create new documentation only when necessary.
+---
+
 # Technical Documentation Writer
 
 ## Purpose
