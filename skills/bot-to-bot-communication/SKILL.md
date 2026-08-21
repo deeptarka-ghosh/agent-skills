@@ -1,3 +1,8 @@
+---
+Name: bot-to-bot-communication
+Description: Communicate reliably with other AI agents through shared chats, message queues, agent-to-agent channels, and other machine-mediated interfaces. Preserve meaning, context, intent, and unambiguous interpretation while using concise, machine-friendly communication.
+---
+
 # Bot-to-Bot Communication
 
 ## Purpose
